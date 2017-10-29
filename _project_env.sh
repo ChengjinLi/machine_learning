@@ -1,0 +1,2 @@
+PROJECT_NAME=machine_learning
+PROJECT_USER=MJ
