@@ -17,7 +17,7 @@
         sudo easy_install pip
     * 4、安装 virtualenv
         pip install virtualenv
-    * 5、创建项目的虚拟环境
+    * 5、创建项目的虚拟环境(需要先切换到machine_learning下)
         sh scripts/env_prepare.sh
     * 6、安装依赖包
         sh scripts/env_update.sh
