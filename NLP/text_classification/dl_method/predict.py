@@ -8,7 +8,7 @@ Created on 2017年10月03日
 from __future__ import absolute_import
 import os
 import sys
-p = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))))
+p = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 if p not in sys.path:
     sys.path.append(p)
 import tensorflow as tf
