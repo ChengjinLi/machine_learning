@@ -70,7 +70,7 @@ def predict(text):
             input_x = graph.get_operation_by_name('train/model/input_x').outputs[0]
             dropout_keep_prob = graph.get_operation_by_name('train/model/dropout_keep_prob').outputs[0]
             # 待评估的Tensors
-            predictions = graph.get_operation_by_name('train/model/output/predictions').outputs[0]
+            predictions = graph.get_operation_by_name('train/model/output_layer/prediction').outputs[0]
             predict_class = sess.run(predictions, {input_x: x_test, dropout_keep_prob: 1.0})[0]
             return index2label_dict.get(predict_class)
 
